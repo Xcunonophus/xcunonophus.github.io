@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 24px;
+}
+
+:root {
+    --white-color: #ffffff;
+    --main-color: #f6d2ff;
+    --secondary-color: #6a80ff;
+    --margin-width: 15%
+}
+
+.margin-zone {
+    margin: 0 var(--margin-width);
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    height: 0;
+}
+
+.shadow {
+    box-shadow: 0 0 4px rgb(14 55 54 / 15%);
+}
+
+.navbar {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.navbar li {
+    display: table-cell;
+    text-align: center;
+    background: var(--white-color);
+}
+
+.navbar li:hover {
+    background: var(--main-color);
+}
+
+.navbar li a {
+    display: block;
+    padding: 10px 0px;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #6a80ff00, 70%, #6a80ff), url(img/banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+}
+
+.title-div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+h1 {
+    font-size: 100px;
+    color: var(--white-color);
+}
+
+.arrow {
+    width: 100%;
+    height: 10vh;
+    background-image: url(img/chevron.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50px;
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+}
+
+.info {
+    margin: 0px 50px 50px 50px;
+    padding: 50px;
+    background-color: var(--main-color);
+    flex: 1;
+}
+
+.wiwo {
+    margin: 0px 50px 50px 50px;
+    padding: 50px;
+    background-color: var(--main-color);
+    flex: 1;
+}
+
+.contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.contact-form form {
+    position: relative;
+    width: 400px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    outline: none;
+    background: var(--main-color);
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+textarea {
+    resize: none;
+    height: 200px;
+}
+
+form .send-btn {
+    max-width: 110px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: var(--secondary-color);
+}
+
+form .send-btn:hover {
+    background: var(--main-color);
+    color: black;
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+}
+
+.development {
+    background: var(--main-color);
+    margin: 20px 50px;
+    padding-bottom: 50px;
+}
+
+.design {
+    background: var(--main-color);
+    margin: 20px 50px;
+    padding-bottom: 50px;
+}
+
+.portfolio div ul li a img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.portfolio div ul li a img:hover {
+    border: 5px var(--secondary-color);
+    border-style: solid;
+}
+
+.designs {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.developments {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.designs li {
+    display: table-cell;
+    text-align: center;
+}
+
+.developments li {
+    display: table-cell;
+    text-align: center;
+}
+
+.des {
+    padding-left: 50px;
+}
+
+.dev {
+    padding-left: 50px;
+}
+
+.portf_header {
+    margin-left: 100px;
+}
+
+.popup {
+    background-color: var(--secondary-color);
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    z-index: 1001;
+}
+
+.popbackground {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    visibility: hidden;
+    margin: 0 calc(-1 * var(--margin-width));
+}
+
+.showpop {
+    visibility: visible;
+}
+
+.popup img {
+    height: 100%;
+    width: 50%;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.pop_text {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pop_text a {
+    font-size: 24px;
+}

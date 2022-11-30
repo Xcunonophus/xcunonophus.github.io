@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toby Dennis</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="title-div">
+            <h1>Toby Dennis</h1>
+        </div>
+    </header>
+
+    <div class="arrow"></div>
+
+    <div class="margin-zone"">
+
+        <section class=" about" id="about">
+        <div class="info">
+            <h2>
+                About Me
+            </h2>
+            <p>Hi, I am Toby and I aspire to become a web developer/designer. Coming out of a degree in sociology, I am
+                looking for a job that allows me to be creative as well as technical. After partaking in a UI/UX
+                bootcamp, with the technical development side in HTML, CSS and some Javascript alongside designing
+                websites using tools such as Figma I have the confidence and skills to step into this field.</p>
+        </div>
+        </section>
+
+
+
+        <section class=" portfolio" id="portfolio">
+            <h2 class="portf_header">Portfolio</h2><br><br>
+            <div class="design">
+                <h3 class="des">Design</h3><br>
+                <ul class="designs">
+                    <li><a data-title="Coffee Landing Page"
+                            data-href="https://www.figma.com/file/oQV9V6UXSy5QkcguZxwYLJ/Coffee-Landing-Page?t=w0ui48fFRKrVLYJm-0"
+                            data-desc="This was a design challenge to help familiarise myself with Figma.
+                        The page needed to include an email input for users but had no guidelines on brand/design.">
+                            <img src="img/Coffee Landing Page.png" alt="Coffe Landing Page">
+                        </a></li>
+                    <li><a data-title="Website Recreation"
+                            data-href="https://www.figma.com/file/73cjMC1kFAQDcPcIPqL1z5/Bath-Ivy?t=w0ui48fFRKrVLYJm-0"
+                            data-desc="This design challenge led to me reproducing an existing website. To do this I had to use more of the advanced functions of Figma such as providing colour gradients and spacing items.">
+                            <img src="img/ivy.png" alt="Ivy Recreation">
+                        </a></li>
+                    <li><a data-title="Reverse Engineer Wireframe"
+                            data-href="https://www.figma.com/file/hqfQzc9dsh3EDsUDCL8QsX/Discord-Reversengineer?t=w0ui48fFRKrVLYJm-0"
+                            data-desc="This task led to us choosing an app and reverse engineering it as a wireframe. I chose the Discord app as it had a decent amount of complexity to break down.">
+                            <img src="img/Discord Reversengineer.png" alt="Discord Reverse Engineer">
+                        </a></li>
+                    <li><a data-title="Emerge Project"
+                            data-href="https://www.figma.com/file/3696VqBMOV4VWRfhY2bedJ/EMERGE?t=w0ui48fFRKrVLYJm-0"
+                            data-desc="This was my final project where I worked with a client to produce a design for their companies new website. It has multiple pages including complex animations such as a carousel and a custom dropdown effect. Click the link below to see it in action.">
+                            <img src="img/emerge contact.png" alt="Emerge Contact Page">
+                        </a></li>
+                </ul>
+            </div>
+            <div class="development">
+                <h3 class="dev">Development</h3><br>
+                <ul class="developments">
+                    <li><a data-title="Begginer Website"
+                            data-href="https://github.com/Xcunonophus/toby-html-homework/tree/main/FelineFine"
+                            data-desc="This was an introductory challenge to web development where I worked to create a multiple linking page website with forms that users could interact with.">
+                            <img src="img/vet.png" alt="Vet Page">
+                        </a></li>
+                    <li><a data-title="Impelementation Challenge"
+                            data-href="https://github.com/Xcunonophus/toby-html-homework/tree/main/week-4"
+                            data-desc="I was creating a website from an existing design. This recquired use of both flexbox and css to accurately recreate the design.">
+                            <img src="img/hogwarts.png" alt="Hogwarts Page">
+                        </a></li>
+                    <li><a data-title="Group Task"
+                            data-href="https://github.com/Xcunonophus/toby-html-homework/tree/main/week-6"
+                            data-desc="Another implementation except I worked with others to develop it. This project needed to be responsive for different screen sizes which use of view port measurements helped with alongside creating sticky elements.">
+                            <img src="img/bathspa.png" alt="Bath Spa Page">
+                        </a></li>
+                    <li><a data-title="My Portfolio!" data-href="#home"
+                            data-desc="This was my final development project that is my most complex yet. I designed it myself with wireframes and mocked it up in Figma before developing it. I had to use Javascript for some of the interactable elements (like this popup) and lots of flex boxes. The contact me section is just for show.">
+                            <img src="img/portf.png" alt="Portfolio Page">
+                        </a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="heading">
+                <h2>Contact Me (Prototype)</h2>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" name="" id="" placeholder="Enter Your Email" required>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                    <input type="submit" value="Send" class="send-btn">
+                </form>
+            </div>
+        </section>
+
+        <div class="popup">
+            <img src="img/hogwarts.png" alt="">
+            <div class="pop_text">
+                <h3>yabble</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur corporis incidunt sunt,
+                    doloribus
+                    illo culpa praesentium molestias. Ad, tempora similique. Nemo alias vitae ullam modi nam expedita,
+                    accusamus repellat esse?</p><br>
+                <a href="https://www.figma.com/file/oQV9V6UXSy5QkcguZxwYLJ/Coffee-Landing-Page?t=w0ui48fFRKrVLYJm-0">Link
+                    to
+                    project</a>
+            </div>
+        </div>
+        <div class="popbackground">
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
